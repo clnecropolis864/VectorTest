@@ -25,4 +25,30 @@ ct.assert_equals(5, Vector2.zcomponent)
 print "Success"
 
 #TESTING DOTPRODUCT
+print "Testing dotProduct"
 
+Vector1a = vector.Vector2d(3, 4)
+Vector1b = vector.Vector2d(5, 6)
+ans = calc.dotProduct(Vector1a, Vector1b)
+ct.assert_equals(39, ans)
+
+Vector1a = vector.Vector2d(3, -4)
+Vector1b = vector.Vector2d(-5, 6)
+ans = calc.dotProduct(Vector1a, Vector1b)
+ct.assert_equals(-39, ans)
+
+Vector2a = vector.Vector3d(-3, 4, 5)
+Vector2b = vector.Vector3d(5, -6, 7)
+ans = calc.dotProduct(Vector2a, Vector2b)
+ct.assert_equals(-4, ans)
+print "Success"
+
+#TESTING CROSSPRODUCT
+print "Testing crossProduct"
+ans = calc.crossProduct(Vector2a, Vector2b)
+ct.assert_equals(58, ans.xcomponent)
+ct.assert_equals(46, ans.ycomponent)
+ct.assert_equals(-2, ans.zcomponent)
+
+
+print "\nTesting complete."

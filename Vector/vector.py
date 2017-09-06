@@ -12,6 +12,9 @@ class Vector2d(Vector):
 		self.xcomponent = x
 		self.ycomponent = y
 
+	def getType(self):
+		return "Vector2d"
+
 class Vector3d(Vector):
 	"""Instance is a vector x, y, z
     
@@ -24,6 +27,9 @@ class Vector3d(Vector):
 		self.xcomponent = x
 		self.ycomponent = y
 		self.zcomponent = z
+
+	def getType(self):
+		return "Vector3d"
 
 
 
