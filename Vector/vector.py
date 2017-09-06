@@ -1,16 +1,29 @@
 class Vector(object):
-	def __init__(self):
+	"""NO INSTANCE; Abstract parent class"""
 
-class 2dVector(Vector):
+class Vector2d(Vector):
+	"""Instance is a vector x, y
+    
+    INSTANCE ATTRIBUTES:
+        xcomponent  [int]
+        ycomponent	[int]
+    """
 	def __init__(self, x, y):
-		xcomponent = x
-		ycomponent = y
+		self.xcomponent = x
+		self.ycomponent = y
 
-class 3dVector(Vector):
-	def __init(self, x, y, z):
-		xcomponent = x
-		ycomponent = y
-		zcomponent = z
+class Vector3d(Vector):
+	"""Instance is a vector x, y, z
+    
+    INSTANCE ATTRIBUTES:
+        xcomponent  [int]
+        ycomponent	[int]
+        zcomponent	[int]
+    """
+	def __init__(self, x, y, z):
+		self.xcomponent = x
+		self.ycomponent = y
+		self.zcomponent = z
 
 
 
