@@ -15,6 +15,9 @@ class Vector2d(Vector):
 	def getType(self):
 		return "Vector2d"
 
+	def __str__(self):
+		return "<" + str(self.xcomponent) + ", " + str(self.ycomponent) + ">"
+
 class Vector3d(Vector):
 	"""Instance is a vector x, y, z
     
@@ -30,6 +33,10 @@ class Vector3d(Vector):
 
 	def getType(self):
 		return "Vector3d"
+
+	def __str__(self):
+		return "<" + str(self.xcomponent) + ", " + str(self.ycomponent) +\
+		", " + str(self.zcomponent) + ">"
 
 
 
