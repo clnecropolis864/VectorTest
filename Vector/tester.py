@@ -50,5 +50,9 @@ ct.assert_equals(58, ans.xcomponent)
 ct.assert_equals(46, ans.ycomponent)
 ct.assert_equals(-2, ans.zcomponent)
 
+print "Testing __str__"
+print Vector1a
+print Vector2a
+
 
 print "\nTesting complete."
